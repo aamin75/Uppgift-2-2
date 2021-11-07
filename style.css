@@ -83,6 +83,14 @@ cite {
     align-items: flex-end;
 }
 
+.menu_img {
+    display: none;
+}
+
+.close_img {
+    display: none;
+}
+
 .logo_Img img {
     margin: 26px 24px 0 27px;
 }
@@ -392,8 +400,41 @@ footer a {
         height: 82px;
         margin: 26px 13px 0 27px;
     }
-    .navbar__ul {
+    .menu_img {
+        display: inherit;
+        position: absolute;
+        left: 85vw;
+        top: 28px;
+    }
+    .navbar__div {
+        display: flex;
+        position: absolute;
+        background: #011827;
+        width: 440px;
+        height: 914px;
+        margin: 23px 20px;
+        justify-content: center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        /**********************************************************************************************/
         display: none;
+        /**********************************************************************************************/
+    }
+    .close_img {
+        display: inherit;
+        position: absolute;
+        height: 40px;
+        width: 38px;
+        left: 375px;
+        top: 25px;
+    }
+    .navbar__div .navbar__ul {
+        margin: 35vh 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar__ul li a {
+        font-size: 36px;
+        font-weight: bold;
     }
     .mainImg__image {
         height: 274px;
@@ -431,13 +472,14 @@ footer a {
     }
     .popular_Cards {
         display: inline-flex;
-        width: auto;
+        width: 100vw;
         height: auto;
         margin: 0px;
         margin-bottom: 47px;
         margin-left: 52px;
         flex-flow: row nowrap;
         justify-content: flex-start;
+        overflow: hidden;
     }
     .single_Card {
         box-sizing: border-box;
